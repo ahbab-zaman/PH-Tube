@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <script src="https://kit.fontawesome.com/daf73e6806.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center py-5 w-11/12 mx-auto border-b-2">
+        <div>
+          <img src="images/Logo.png" alt="" />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="Search here"
+            class="input input-bordered input-accent w-full"
+          />
+        </div>
+        <div>
+            <button class="btn">
+                Sort
+            </button>
+        </div>
+      </nav>
+
+      <div id="nav-buttons" class="py-5 flex justify-center items-center gap-4">
+
+      </div>
+
+    </header>
+
+
+    <main>
+
+        <section id="videos-container" class="w-11/12 mx-auto grid grid-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-6 space-y-4">
+           
+           
+        </section>
+
+    </main>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
