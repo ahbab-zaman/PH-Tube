@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PH Tube</title>
-    <script src="https://kit.fontawesome.com/daf73e6806.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/daf73e6806.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
       rel="stylesheet"
@@ -22,43 +25,70 @@
         },
       };
     </script>
+
+    <style>
+      .active{
+        background-color: brown;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav class="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center py-5 w-11/12 mx-auto border-b-2">
+      <nav
+        class="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center py-5 w-11/12 mx-auto border-b-2"
+      >
         <div>
           <img src="images/Logo.png" alt="" />
         </div>
         <div>
-          <input
+          <input id="input-text"
             type="text"
             placeholder="Search here"
             class="input input-bordered input-accent w-full"
           />
         </div>
         <div>
-            <button class="btn">
-                Sort
-            </button>
+          <button class="btn">Sort</button>
         </div>
       </nav>
 
-      <div id="nav-buttons" class="py-5 flex justify-center items-center gap-4">
-
-      </div>
-
+      <div
+        id="nav-buttons" 
+        class="py-5 flex justify-center items-center gap-4"
+      ></div>
     </header>
 
-
     <main>
+      <section
+        id="videos-container"
+        class="w-11/12 mx-auto grid grid-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-6 space-y-4"
+      ></section>
 
-        <section id="videos-container" class="w-11/12 mx-auto grid grid-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-6 space-y-4">
-           
-           
-        </section>
+
+      <!-- Open the modal using ID.showModal() method -->
+<button id="modal-btn" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+<dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modal-content">
+
+    </div>
+    
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+     
+      
 
     </main>
 
     <script src="./JS/script.js"></script>
+    <script src="./JS/test.js"></script>
   </body>
 </html>
